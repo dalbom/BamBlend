@@ -21,8 +21,15 @@ BamBlend preserves all Bambu Studio metadata during the round-trip — plate ass
 
 ## Installation
 
-1. Download or clone this repository
-2. Rename the folder to `bambu_3mf_io` (Blender uses the folder name as the Python package name)
+### From release (recommended)
+1. Download `BamBlend-v1.0.0.zip` from the [latest release](https://github.com/dalbom/BamBlend/releases/latest)
+2. In Blender: **Edit > Preferences > Add-ons > Install from Disk**
+3. Select the downloaded zip
+4. Enable **BamBlend – Bambu Studio 3MF Import/Export**
+
+### From source
+1. Clone this repository
+2. Rename the cloned folder to `bamblend`
 3. Copy it into your Blender addons directory (e.g. `%APPDATA%\Blender Foundation\Blender\4.x\scripts\addons\`)
 4. In Blender, go to **Edit > Preferences > Add-ons** and enable **BamBlend – Bambu Studio 3MF Import/Export**
 
