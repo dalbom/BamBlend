@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Blender
+*.blend
+*.blend1
+*.blend2
+
+# 3MF test files
+*.3mf
+
+# Archives
+*.zip
+
+# Extracted test data
+FlowerClock_extracted/
+untitled_check/
+untitled_reexport/
+FlowerClock_analysis.json
+
+# Dev artifacts
+bambu_3mf_addon_guide.html
+docs_thumbnail.png
+
+# IDE
+.vscode/
+.idea/
+
+# Claude Code
+.claude/
