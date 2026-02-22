@@ -17,7 +17,8 @@ build/
 # Archives
 *.zip
 
-# Extracted test data
+# Test files & extracted data
+test_*.py
 FlowerClock_extracted/
 untitled_check/
 untitled_reexport/

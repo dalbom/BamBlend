@@ -22,9 +22,9 @@ BamBlend preserves all Bambu Studio metadata during the round-trip — plate ass
 ## Installation
 
 1. Download or clone this repository
-2. In Blender, go to **Edit > Preferences > Add-ons > Install from Disk**
-3. Select the `bambu_3mf_io` folder (or a `.zip` of it)
-4. Enable **BamBlend – Bambu Studio 3MF Import/Export**
+2. Rename the folder to `bambu_3mf_io` (Blender uses the folder name as the Python package name)
+3. Copy it into your Blender addons directory (e.g. `%APPDATA%\Blender Foundation\Blender\4.x\scripts\addons\`)
+4. In Blender, go to **Edit > Preferences > Add-ons** and enable **BamBlend – Bambu Studio 3MF Import/Export**
 
 ## Usage
 
@@ -51,29 +51,20 @@ Options:
 ## Project Structure
 
 ```
-bambu_3mf_io/
-  __init__.py          # Addon registration (bl_info)
-  import_bambu_3mf.py  # Import operator
-  export_bambu_3mf.py  # Export operator
-  export_stl.py        # STL export operator
-  core/
-    parser.py          # 3MF ZIP/XML parser
-    builder.py         # Blender scene builder
-    serializer.py      # 3MF ZIP/XML writer
-    metadata.py        # Metadata handling
-    transform.py       # Matrix/transform utilities
-    version.py         # Bambu Studio version detection
-    materials.py       # Material creation
-  ui/
-    panels.py          # N-panel sidebar
-```
-
-## Testing
-
-Tests run inside Blender's Python environment:
-
-```bash
-blender --background --python test_import.py -- path/to/test.3mf
+__init__.py          # Addon registration (bl_info)
+import_bambu_3mf.py  # Import operator
+export_bambu_3mf.py  # Export operator
+export_stl.py        # STL export operator
+core/
+  parser.py          # 3MF ZIP/XML parser
+  builder.py         # Blender scene builder
+  serializer.py      # 3MF ZIP/XML writer
+  metadata.py        # Metadata handling
+  transform.py       # Matrix/transform utilities
+  version.py         # Bambu Studio version detection
+  materials.py       # Material creation
+ui/
+  panels.py          # N-panel sidebar
 ```
 
 ## License
