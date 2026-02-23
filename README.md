@@ -76,4 +76,4 @@ ui/
 
 ## License
 
-[MIT](LICENSE)
+[GPL v3](LICENSE)
